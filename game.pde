@@ -4,8 +4,8 @@ class Game {
   Player player2;
   
   public Game(){
-    player1 = new Player(Side.LEFT);
-    player2 = new Player(Side.RIGHT);
+    player1 = new Player(Side.LEFT,  color(200,123,0));
+    player2 = new Player(Side.RIGHT, color(0,252,145));
   }
   
   void tick(){

@@ -18,8 +18,11 @@ class Player {
   boolean isMoving = false;
   MovementDirection direction = MovementDirection.UP;
   
-  public Player(Side side){
+  color colour;
+  
+  public Player(Side side, color colour){
     this.side = side;
+    this.colour = colour;
     if (side == Side.LEFT) {
       x = 30;
       
@@ -59,14 +62,14 @@ class Player {
   void draw(){
     
   if (this.side == Side.LEFT) {
-    color c = color(200,123,0);
-    fill(c);
+    
+    fill(colour);
     noStroke();
     rect(x - barWidth, y , barWidth , barLength);
    
   } else {
-    color c = color(0,252,145);
-    fill(c);
+    
+    fill(colour);
     noStroke();
     rect(x,y,barWidth,barLength);
   } 

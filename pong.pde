@@ -6,7 +6,7 @@ void setup(){
 }
 
 void draw(){
- background(243,252,0); 
+ background(0); 
  game.tick();
  game.draw();
 }
@@ -15,6 +15,7 @@ void keyPressed() {
   
   if (keyCode == UP) {
    game.moveUpPlayer2();
+   
     
   } else if (keyCode == DOWN){
     game.moveDownPlayer2();
