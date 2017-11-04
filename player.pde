@@ -27,6 +27,9 @@ class Player {
   }
   void draw(){
   if (this.side == Side.LEFT) {
+    color c = color(200,123,0);
+    fill(c);
+    noStroke();
     rect(x - barWidth, y , barWidth , barLength);
    
   } else {
