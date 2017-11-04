@@ -6,7 +6,7 @@ void setup(){
 }
 
 void draw(){
- background(100); 
+ background(243,252,0); 
  game.tick();
  game.draw();
 }

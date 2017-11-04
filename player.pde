@@ -33,6 +33,9 @@ class Player {
     rect(x - barWidth, y , barWidth , barLength);
    
   } else {
+    color c = color(0,252,145);
+    fill(c);
+    noStroke();
     rect(x,y,barWidth,barLength);
   }
   }
